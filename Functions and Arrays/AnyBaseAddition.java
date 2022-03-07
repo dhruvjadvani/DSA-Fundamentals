@@ -2,7 +2,7 @@ import java.util.*;
 public class AnyBaseAddition {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner scn = new Scanner(System.in);
 	      int b = scn.nextInt(); // base
 	      int n1 = scn.nextInt();
@@ -13,7 +13,7 @@ public class AnyBaseAddition {
 	}
 	
 	public static int getSum(int b, int n1, int n2){
-	       // write ur code here
+	      
 			int sum = 0;
 			int carry = 0;
 			int power = 1;
