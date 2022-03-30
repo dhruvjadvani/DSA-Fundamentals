@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class QuickSort {
+public class QuickSelect {
 
   public static int quickSelect(int[] arr, int lo, int hi, int k) {
     int pivot = arr[hi];
