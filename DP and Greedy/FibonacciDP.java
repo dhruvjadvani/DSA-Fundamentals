@@ -7,7 +7,7 @@ public static void main(String[] args) throws Exception {
 	    // write your code here
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
-		int fibn = Fib(n);
+		int fibn = FibMemoized(n, new int[n + 1]);
 		System.out.println(fibn);
 		
 		
@@ -42,5 +42,7 @@ public static void main(String[] args) throws Exception {
 		return fibn;
 		
 	}
+	
+
 	
 }
