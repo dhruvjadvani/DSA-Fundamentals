@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class FriendsPairing {
 
    public static void main(String[] args) throws Exception {
-      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-      int n = Integer.parseInt(br.readLine());
+      Scanner scn = new Scanner(System.in);
+      int n = scn.nextInt();
       if (n <= 2) {
          System.out.println(n);
          return;
