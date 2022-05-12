@@ -3,27 +3,28 @@ public class BestTimeToBuyAndSellStockInfiniteTransactionAllowed {
 	public static void main(String[] args) throws Exception {
         
 		Scanner scn = new Scanner(System.in);
-		int n = scn.nextInt(); 
+		int n = scn.nextInt(); //no of days
 		 
-		int[] arr = new int[n]; 
+		int[] arr = new int[n]; //prices of n days stored in this array
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = scn.nextInt();
 		}
 		
-		int BuyingDip = 0;
-		int sellingHigh = 0;
+		int BuyingDate = 0;
+		int sellingDate = 0;
 		int profit = 0;
 		
 		for(int i = 1; i < arr.length; i++) {
 			if(arr[i] >= arr[i - 1]) {
-				sellingHigh++;
+				sellingDate++;
 			} else {
-				profit = profit + arr[sellingHigh] - arr[BuyingDip];
-				BuyingDip =sellingHigh = i;
+				profit = profit + arr[sellingDate] - arr[BuyingDate];
+				BuyingDate =sellingDate = i;
 			}
 		}
 		
 		System.out.println(profit);
+		
 		
     }
 }
