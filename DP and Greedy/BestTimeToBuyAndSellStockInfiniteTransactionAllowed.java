@@ -22,7 +22,7 @@ public class BestTimeToBuyAndSellStockInfiniteTransactionAllowed {
 				BuyingDate =sellingDate = i;
 			}
 		}
-		
+		profit = profit + arr[sellingDate] - arr[BuyingDate];
 		System.out.println(profit);
 		
 		
