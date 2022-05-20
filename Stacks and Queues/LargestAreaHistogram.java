@@ -17,7 +17,7 @@ public class LargestAreaHistogram {
 	    rb[arr.length - 1] = arr.length;
 	    
 	    for(int i = arr.length - 2; i >= 0; i--) {
-	    	while(st.size() > 0 && arr[i] < arr[st.peek()]) {
+	    	while(st.size() > 0 && arr[i] <= arr[st.peek()]) {
 	    		st.pop();
 	    	}
 	    	
@@ -37,7 +37,7 @@ public class LargestAreaHistogram {
 	    lb[0] = -1;
 	    
 	    for(int i = 0; i < arr.length; i++) {
-	    	while(st.size() > 0 && arr[i] < arr[st.peek()]) {
+	    	while(st.size() > 0 && arr[i] <= arr[st.peek()]) {
 	    		st.pop();
 	    	}
 	    	
@@ -67,4 +67,3 @@ public class LargestAreaHistogram {
 	    
 	 }
 }
-
