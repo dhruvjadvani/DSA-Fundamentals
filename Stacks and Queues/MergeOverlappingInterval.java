@@ -1,8 +1,5 @@
 
 import java.util.*;
-
-import jdk.internal.util.xml.impl.Pair;
-
 import java.io.*;
 
 public class MergeOverlappingIntervals {
