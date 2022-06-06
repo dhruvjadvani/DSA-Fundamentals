@@ -24,5 +24,8 @@ public class OOPsClassesAndObjects {
 		p3.age = 30;
 		p3.saysHi();
 		p1.saysHi();
+		
+		//total 3 references p1, p2, p3
+		//total 2 instances
 	}
 }
