@@ -1,4 +1,4 @@
-public class OOPsSwampGameThree {
+public class OOPsSwapGameThree {
 	public static class Person { 
 		int age;
 		String name;
