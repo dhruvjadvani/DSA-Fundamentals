@@ -26,6 +26,9 @@ public class QueueEx {
 		System.out.println(que.remove());
 		System.out.println(que);
 		
+		System.out.println(que.peek());
+		System.out.println(que);
+		
 	}
 
 }
