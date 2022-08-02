@@ -89,9 +89,9 @@ public class LinkedListAllOps {
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		LinkedListAllOps list = new LinkedListAllOps();
-		 list.addLast("is");
+		
+	     LinkedListAllOps list = new LinkedListAllOps();
+             list.addLast("is");
 	     list.addLast("a");
 	     list.addLast("list");
 	     list.printList(); // is -> a -> list -> null
