@@ -1,8 +1,7 @@
 import java.io.*;
-import java.util.*;
 
-public class Main {
-    public static class Node {
+public class MergeTwoSortedLinkedLists {
+	public static class Node {
         int data;
         Node next;
     }
@@ -225,9 +224,37 @@ public class Main {
 
             return s.data;
         }
-
+        
+        
         public static LinkedList mergeTwoSortedLists(LinkedList l1, LinkedList l2) {
-            // write your code hered
+           Node one =l1.head;
+           Node two = l2.head;
+           
+           LinkedList l3 = new LinkedList();
+           
+           while(one != null && two != null) {
+        	   if(one.data < two.data) {
+        		   l3.addLast(one.data);
+        		   one = one.next;
+        	   } else {
+        		   l3.addLast(two.data);
+        		   two = two.next;
+        	   }
+           }
+           
+          
+           while(one != null) {
+        	   l3.addLast(one.data);
+        	   one = one.next;
+           }
+           
+           while(two != null) {
+        	   l3.addLast(two.data);
+        	   two = two.next;
+           }
+           
+           return l3;
+        	
         }
     }
 
