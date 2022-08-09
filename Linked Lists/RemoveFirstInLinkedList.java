@@ -1,4 +1,3 @@
-package basicDataStructures.LinkedList;
 import java.io.*;
 public class RemoveFirstInLinkedlist {
 	public static class Node {
