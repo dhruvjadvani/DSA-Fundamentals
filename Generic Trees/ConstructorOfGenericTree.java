@@ -1,5 +1,3 @@
-package basicDataStructures.GenericTree;
-
 import java.util.*;
 
 public class ConstructorOfGenericTree {
