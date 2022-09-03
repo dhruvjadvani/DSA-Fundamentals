@@ -64,13 +64,13 @@ public class IterativePreorderAndPostorderOfGenericTree {
 		  
 		  while(st.size() > 0) {
 			  Pair top = st.peek();
-			  if(top.state == -1) { // pre order -> add in pre order and increase the state
+			  if(top.state == -1) {
 				  pre = pre + top.node.data + " ";
 				  top.state++;
-			  } else if(top.state == top.node.children.size()) { // post order -> add in post order and pop from the stack
+			  } else if(top.state == top.node.children.size()) { 
 				  post = post + top.node.data + " ";
 				  st.pop();
-			  } else { //0 to children.size()-1 between ->  then push the child and increase the state
+			  } else { 
 				  Pair childPair = new Pair(top.node.children.get(top.state), -1);
 				  st.push(childPair);
 				  
